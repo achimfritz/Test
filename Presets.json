@@ -1,2 +1,354 @@
 {
+    "mac-dlg": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "",
+                    "deploymentPath": "\/User\/dlg\/vhost\/{{project}}\/dev\/htdocs\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "mac-dlg",
+                        "hostname": "192.168.2.13",
+                        "username": "dlg"
+                    }
+                ]
+            }
+        ]
+    },
+    "dev-loc": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "",
+                    "deploymentPath": "\/var\/www\/{{project}}\/dev\/htdocs\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "dev-loc",
+                        "hostname": "dev.loc",
+                        "username": "www-data"
+                    }
+                ]
+            }
+        ]
+    },
+    "sma-dev": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.sma.de:sma-websites\/rcw-sma-de.git",
+                    "deploymentPath": "\/var\/www\/rcw\/dev\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "sma-dev",
+                        "hostname": "dev.rcw.sma.de",
+                        "username": "lw-surf"
+                    }
+                ]
+            }
+        ]
+    },
+    "sma-qa": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.sma.de:sma-websites\/rcw-sma-de.git",
+                    "deploymentPath": "\/rcw\/qa\/",
+                    "context": "Staging"
+                },
+                "nodes": [
+                    {
+                        "name": "sma-qa",
+                        "hostname": "qa.rcw.sma.de",
+                        "username": "smaweb04",
+                        "port": 10022
+                    }
+                ]
+            }
+        ]
+    },
+    "sma-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.sma.de:sma-websites\/rcw-sma-de.git",
+                    "deploymentPath": "\/rcw\/surfcaptainFail\/",
+                    "context": "Production",
+                    "database": {
+                        "credentialsSource": null,
+                        "database": "smaweb01_sma",
+                        "username": "smaweb01_sma",
+                        "host": "smabe",
+                        "deploymentPath": "\/rcw\/"
+                    }
+                },
+                "nodes": [
+                    {
+                        "name": "sma-live",
+                        "hostname": "www.sma.de",
+                        "username": "smaweb01",
+                        "port": 10022
+                    }
+                ]
+            }
+        ]
+    },
+    "cred-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/cred.git",
+                    "deploymentPath": "\/var\/www\/cred\/live\/htdocs\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "cred-live",
+                        "hostname": "test",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    },
+    "novatec_web-staging": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/novatec_web.git",
+                    "deploymentPath": "\/var\/www\/novatecweb\/staging\/",
+                    "context": "Testing"
+                },
+                "nodes": [
+                    {
+                        "name": "novatec_web-staging",
+                        "hostname": "81.209.141.58",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    },
+    "bma-qa": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/bma.git",
+                    "deploymentPath": "\/var\/www\/bma\/qa\/",
+                    "context": "Production\/Qa"
+                },
+                "nodes": [
+                    {
+                        "name": "bma-qa",
+                        "hostname": "test",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    },
+    "knovaweb-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/knovaweb.git",
+                    "deploymentPath": "\/var\/www\/knovaweb\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "knovaweb-live",
+                        "hostname": "10.160.7.59",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    },
+    "drxintra-staging": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/drxintra.git",
+                    "deploymentPath": "\/srv\/www\/drxintra\/staging\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "drxintra-staging",
+                        "hostname": "staging-intra.draexlmaier.com",
+                        "username": "xgb09902940"
+                    }
+                ]
+            }
+        ]
+    },
+    "drxintra-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/drxintra.git",
+                    "deploymentPath": "\/srv\/www\/drxintra\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "drxintra-live",
+                        "hostname": "d-world.draexlmaier.com",
+                        "username": "xgb09902940"
+                    }
+                ]
+            }
+        ]
+    },
+    "suzuki_web-dev": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/suzuki_web.git",
+                    "deploymentPath": "\/var\/www\/suzukiweb\/dev\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "suzuki_web-dev",
+                        "hostname": "suzukiweb-dev.vm-af.lightwerk.loc",
+                        "username": "af"
+                    }
+                ]
+            }
+        ]
+    },
+    "gtweb-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/gtweb.git",
+                    "deploymentPath": "\/home\/www-data\/gtweb\/preview\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "gtweb-live",
+                        "hostname": "glastroesch-web.nine.ch",
+                        "username": "www-data"
+                    }
+                ]
+            }
+        ]
+    },
+    "suzuki_web-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/suzuki_web.git",
+                    "deploymentPath": "\/var\/www\/suzuki_web\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "suzuki_web-live",
+                        "hostname": "suzukiweb-live.vm-af.lightwerk.loc",
+                        "username": "af"
+                    }
+                ]
+            }
+        ]
+    },
+    "vm-af": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "",
+                    "deploymentPath": "\/var\/www\/{{project}}\/dev\/htdocs\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "vm-af",
+                        "hostname": "192.168.56.2",
+                        "username": "lw-af"
+                    }
+                ]
+            }
+        ]
+    },
+    "sonovtsweb-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/sonovtsweb.git",
+                    "deploymentPath": "\/srv\/www\/sonovtsweb\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "sonovtsweb-live",
+                        "hostname": "configmuc.sonovts.de",
+                        "username": "lw-deployment",
+                        "port": 19223
+                    }
+                ]
+            }
+        ]
+    },
+    "drxweb-qa": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/drxweb.git",
+                    "deploymentPath": "\/var\/www\/drxweb\/qa\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "drxweb-qa",
+                        "hostname": "www-qa.draexlmaier.com",
+                        "username": "xgb09902940"
+                    }
+                ]
+            }
+        ]
+    },
+    "tyrolitweb-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/tyrolitweb.git",
+                    "deploymentPath": "\/var\/www\/relaunch.tyrolit.com\/web\/tyrolit\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "tyrolitweb-live",
+                        "hostname": "82.150.209.97",
+                        "username": "lightwerk"
+                    }
+                ]
+            }
+        ]
+    },
+    "woerwagintra-live": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/woerwagintra.git",
+                    "deploymentPath": "\/var\/www\/woerwagintra\/live\/",
+                    "context": "Production"
+                },
+                "nodes": [
+                    {
+                        "name": "woerwagintra-live",
+                        "hostname": "intranet-relaunch.woerwagpharma.com",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    }
 }
