@@ -1,2 +1,20 @@
 {
+    "vm-af": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "",
+                    "deploymentPath": "\/var\/www\/{{project}}\/dev\/htdocs\/",
+                    "context": "Development"
+                },
+                "nodes": [
+                    {
+                        "name": "vm-af",
+                        "hostname": "192.168.56.2",
+                        "username": "lw-af"
+                    }
+                ]
+            }
+        ]
+    }
 }
