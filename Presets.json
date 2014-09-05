@@ -16,23 +16,5 @@
                 ]
             }
         ]
-    },
-    "rcwsmade-test": {
-        "applications": [
-            {
-                "options": {
-                    "repositoryUrl": "git@git.sma.de:sma-websites\/rcw-sma-de.git",
-                    "deploymentPath": "\/var\/www\/rcw.sma.de\/test\/",
-                    "context": "Testing"
-                },
-                "nodes": [
-                    {
-                        "name": "rcwsmade-test",
-                        "hostname": "asfddfs",
-                        "username": "lw-deployment"
-                    }
-                ]
-            }
-        ]
     }
 }
