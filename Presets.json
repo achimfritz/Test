@@ -34,5 +34,23 @@
                 ]
             }
         ]
+    },
+    "achimfritzchampionship-test": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@github.com:achimfritz\/AchimFritz.ChampionShip.git",
+                    "deploymentPath": "\/var\/www\/AchimFritz.ChampionShip\/test\/",
+                    "context": "Testing"
+                },
+                "nodes": [
+                    {
+                        "name": "achimfritzchampionship-test",
+                        "hostname": "testaf",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
     }
 }
