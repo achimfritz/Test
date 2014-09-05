@@ -16,5 +16,23 @@
                 ]
             }
         ]
+    },
+    "ievms-test": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@github.com:lightwerk\/ievms.git",
+                    "deploymentPath": "\/var\/www\/ievms\/test\/",
+                    "context": "Testing"
+                },
+                "nodes": [
+                    {
+                        "name": "ievms-test",
+                        "hostname": "test_af27",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
     }
 }
