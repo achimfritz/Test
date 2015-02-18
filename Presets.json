@@ -22,7 +22,7 @@
             {
                 "options": {
                     "repositoryUrl": "git@git.lightwerk.com:project\/suzuki_web.git",
-                    "deploymentPath": "\/var\/www\/footest\/dev\/",
+                    "deploymentPath": "\/data\/www\/footest\/dev\/",
                     "context": "Development"
                 },
                 "nodes": [
