@@ -1,17 +1,35 @@
 {
-    "vm-af": {
+    "achimfritzchampionship-test": {
         "applications": [
             {
                 "options": {
-                    "repositoryUrl": "",
-                    "deploymentPath": "\/var\/www\/{{project}}\/dev\/htdocs\/",
+                    "repositoryUrl": "git@github.com:achimfritz\/AchimFritz.ChampionShip.git",
+                    "deploymentPath": "\/var\/www\/AchimFritz.ChampionShip\/test\/",
+                    "context": "Testing"
+                },
+                "nodes": [
+                    {
+                        "name": "achimfritzchampionship-test",
+                        "hostname": "testaf",
+                        "username": "lw-deployment"
+                    }
+                ]
+            }
+        ]
+    },
+    "footest": {
+        "applications": [
+            {
+                "options": {
+                    "repositoryUrl": "git@git.lightwerk.com:project\/suzuki_web.git",
+                    "deploymentPath": "\/var\/www\/footest\/dev\/",
                     "context": "Development"
                 },
                 "nodes": [
                     {
-                        "name": "vm-af",
-                        "hostname": "192.168.56.2",
-                        "username": "lw-af"
+                        "name": "footest",
+                        "hostname": "footest",
+                        "username": "www-data"
                     }
                 ]
             }
@@ -35,19 +53,19 @@
             }
         ]
     },
-    "achimfritzchampionship-test": {
+    "vm-af": {
         "applications": [
             {
                 "options": {
-                    "repositoryUrl": "git@github.com:achimfritz\/AchimFritz.ChampionShip.git",
-                    "deploymentPath": "\/var\/www\/AchimFritz.ChampionShip\/test\/",
-                    "context": "Testing"
+                    "repositoryUrl": "",
+                    "deploymentPath": "\/var\/www\/{{project}}\/dev\/htdocs\/",
+                    "context": "Development"
                 },
                 "nodes": [
                     {
-                        "name": "achimfritzchampionship-test",
-                        "hostname": "testaf",
-                        "username": "lw-deployment"
+                        "name": "vm-af",
+                        "hostname": "192.168.56.2",
+                        "username": "lw-af"
                     }
                 ]
             }
