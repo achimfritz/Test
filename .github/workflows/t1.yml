@@ -28,3 +28,5 @@ jobs:
         run: echo Hello, world!
       - name: foo
         run: ls
+      - name: analyse
+        run: vendor/bin/phpstan analyse -c phpstan.neon
