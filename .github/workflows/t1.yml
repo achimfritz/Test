@@ -38,7 +38,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: foo
-        run: ls
+        run: sudo service mysql status
       - name: analyse
         run: vendor/bin/phpstan analyse -c phpstan.neon
       - name: t1
